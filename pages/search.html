@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="menu-wrap">
+                <h2 class="menu-wrap__heading">Посилання на інші сторінки:</h2>
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="../pages/authorization.html">Авторизація</a></li>
+                    <li class="menu__item"><a class="menu__link" href="../index.html">Реєстрація</a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <h1 class="main__heading">Пошук</h1>
+            <form method="POST" action="https://fom.in.ua/echo">
+                <fieldset class="regestration">
+                    <div class="form-group">
+                        <label for="categories">
+                            Категорія транспорту
+                        </label>
+                        <select id="categories" name="Category car" >
+                            <option value="Any">Будь-який</option>
+                            <option selected="selected" value="Passenger">Легкові</option>
+                            <option value="Moto">Мото</option>
+                            <option value="Trucks">Вантажівки</option>
+                            <option value="Trailers">Причепи</option>
+                            <option value="Special equipment">Спецтехніка</option>
+                            <option value="Buses">Автобуси</option>
+                            <option value="Water transport">Водний транспорт</option>
+                            <option value="Air transport">Повітряний транспорт</option>
+                            <option value="Mobile home">Автобудинок</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="marka">
+                            Марка
+                        </label>
+                        <select id="marka" name="Car marka" aria-placeholder="Марка" >
+                            <option value="Any">Будь-яка</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Audi">Audi</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Hundai">Hundai</option>
+                            <option value="Lexus">Lexus</option>
+                            <option value="Mazda">Mazda</option>
+                            <option value="Mercedes-Benz">Mercedes-Benz</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                            <option value="Volvo">Volvo</option>
+                            <option value="Skoda">Skoda</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="Renault">Renault</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="carBodyType">
+                            Тип кузова
+                        </label>
+                        <select id="carBodyType" name="Car body" >
+                            <option value="Any">Будь-який</option>
+                            <option value="Sedan">Седан</option>
+                            <option value="Universal">Универсал</option>
+                            <option value="hatchback">Хэтчбек</option>
+                            <option value="Liftback">Лифтбек</option>
+                            <option value="Limousine">Лимузин</option>
+                            <option value="SUV">Внедорожник</option>
+                            <option value="Crossover">Кроссовер</option>
+                            <option value="Stretch">Стретч</option>
+                            <option value="Compartment">Купе</option>
+                            <option value="Cabriolet">Кабриолет</option>
+                            <option value="Roadster">Родстер</option>
+                            <option value="Targa">Тарга</option>
+                            <option value="Pickup">Пикап</option>
+                            <option value="Van">Фургон</option>
+                            <option value="Minivan">Минивэн</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="coutry">
+                            Країна виробник
+                        </label>
+                        <select id="coutry" name="Coutry" >
+                            <option value="Any">Будь-яка</option>
+                            <option value="Germeny">Німеччина</option>
+                            <option value="Ukraine">Україна</option>
+                            <option value="Japan">Японія</option>
+                            <option value="China">Китай</option>
+                            <option value="France">Франція</option>
+                            <option value="Poland">Польща</option>
+                            <option value="Czech">Чехія</option>
+                            <option value="USA">США</option>
+                            <option value="Italy">Італія</option>
+                            <option value="Sweden">Швеція</option>
+                            <option value="India">Індія</option>
+                            <option value="Brazil">Бразилія</option>
+                            <option value="Korea">Корея</option>
+                            <option value="Canada">Канада</option>
+                            <option value="Lithuania">Литва</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="gearbox">
+                            Тип коробки передач
+                        </label>
+                        <select id="gearbox" name="Type gearbox" >
+                            <option value="Any">Будь-яка</option>
+                            <option value="Mechanical">Механічна коробка</option>
+                            <option value="Automatic">Автоматична коробка</option>
+                            <option value="Robotic">Роботизована коробка</option>
+                            <option value="Variable">Варіативна (безступінчаста) коробка</option>
+                        </select>
+                    </div>
+                    <div class="form-group"> 
+                        <label>
+                            Тип палива:
+                        </label>
+                        Бензин
+                        <input type="radio" name="Type oil" value="benzine" />
+                        Дизель
+                        <input type="radio" name="Type oil" value="diesel" />
+                    </div>
+                    <div class="form-group">
+                        <label for="colorcar">
+                            Колір авто
+                        </label>
+                        <input id="colorcar" type="color" name="Color car">
+                    </div>
+                    <div class="form-group">
+                        Ціна авто:
+                        <label for="price_s">
+                             Від:
+                        </label>
+                        <input id="price_s" type="number" placeholder="0$" name="Price s">
+                        <label for="price_do">
+                            До:
+                        </label>
+                        <input id="price_do" type="number" placeholder="10000$" name="Price do">
+                    </div>
+                    <div class="form-group">
+                        Рік авто:
+                        <label for="year_s">
+                             Від:
+                        </label>
+                            <input id="year_s" type="number" placeholder="1900" name="Year s" min="1900" max="2023">
+                        <label for="year_do">
+                            До:
+                        </label>
+                            <input id="year_do" type="number" placeholder="2024" name="Year do" min="1901" max="2024">
+                    </div>
+                    <div class="form-group">
+                        <label for="stan">
+                            Стан авто
+                            <select id="stan" name="Stan" multiple class="stan">
+                                <option value="Bat">Бита</option>
+                                <option value="credit">У кредиті</option>
+                                <option value="Uncleared">Нерозмитнена</option>
+                                <option value="Driven">Пригнана</option>
+                                <option value="Car is not in Ukraine">Авто не в Україні</option>
+                                <option value="Drowned">Втоплена</option>
+                                <option value="Professionally renovated">Професійно відремонтована</option>
+                                <option value="Is a service book">Є сервісна книжка</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="comfort">
+                            Комфорт авто
+                            <select id="comfort" name="Comfort" multiple>
+                                <option value="Leather salon">Шкіряний салон</option>
+                                <option value="Hatch">Люк</option>
+                                <option value="Seat ventilation">Вентиляція сидінь</option>
+                                <option value="Power steering">Підсилювач керма</option>
+                                <option value="Heated seats">Підігрів сидінь</option>
+                                <option value="Cruise control">Круїз контроль</option>
+                                <option value="Windshield heating">Обігрів лобового скла</option>
+                                <option value="Heated mirrors">Підігрів дзеркал</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn" type="submit">Пошук</button>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn" type="reset">Скинути</button>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+        <div>
+            <h2 class="catalogcar">Каталог</h2>
+            <ul class="vitrina">
+                <li class="vitrina__item">
+                    <img src="../images/reno.jpg" alt="renocar">
+                    <a href="#">Reno kengo 2018</a>
+                <li class="vitrina__item">
+                    <img class="vitrina__picture" src="../images/BMW_f60.png" alt="bmwcar">
+                    <a href="#">BMW F60 2016</a>
+                <li class="vitrina__item">
+                    <img class="vitrina__picture" src="../images/audi_a6.png" alt="audicar">
+                    <a href="#">Audi a6 2015</a>
+                <li class="vitrina__item">
+                    <img class="vitrina__picture" src="../images/santafe.png" alt="santafecar">
+                    <a href="#">Santafe 2020</a>
+                <li class="vitrina__item">
+                    <img class="vitrina__picture" src="../images/passat.png" alt="passatcar">
+                    <a href="#">Passat b7 2019</a>
+                <li class="vitrina__item">
+                    <img class="vitrina__picture" src="../images/tiguan.png" alt="tiguancar">
+                    <a href="#">Tiguan 2021</a>
+                <li class="vitrina__item">
+                    <img class="vitrina__picture" src="../images/civic.png" alt="civiccar">
+                    <a href="#">Civic 2022</a>
+                <li class="vitrina__item">
+                    <img class="vitrina__picture" src="../images/RX.png" alt="LXRxcar">
+                    <a href="#">Lexus Rx 2020</a>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
