@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пошук</title>
+    <!--Підключив reset.-->
     <link rel="stylesheet" href="../css/reset.css" />
+    <!--Підключив style.-->
     <link rel="stylesheet" href="../css/styleSearce.css" />
 </head>
 <body>
+    <!--Додав wrapper.-->
     <div class="wrapper">
+        <!--Додав header.-->
         <header>
+            <!--Додав блок з посиланнями на інші сторінки.-->
             <div class="menu-wrap">
                 <h2 class="menu-wrap__heading">Посилання на інші сторінки:</h2>
                 <ul class="menu">
@@ -18,10 +23,14 @@
                 </ul>
             </div>
         </header>
+        <!--Додав основну частину.-->
         <main class="main">
+            <!--Додав основний заголовок.-->
             <h1 class="main__heading">Пошук</h1>
+            <!--Додав форму для пошуку.-->
             <form method="POST" action="https://fom.in.ua/echo">
                 <fieldset class="regestration">
+                    <!--Додав select для категорії транспорту.-->
                     <div class="form-group">
                         <label for="categories">
                             Категорія транспорту
@@ -39,6 +48,7 @@
                             <option value="Mobile home">Автобудинок</option>
                         </select>
                     </div>
+                    <!--Додав select для марки авто.-->
                     <div class="form-group">
                         <label for="marka">
                             Марка
@@ -62,6 +72,7 @@
                             <option value="Renault">Renault</option>
                         </select>
                     </div>
+                    <!--Додав select для типа кузова.-->
                     <div class="form-group">
                         <label for="carBodyType">
                             Тип кузова
@@ -85,6 +96,7 @@
                             <option value="Minivan">Минивэн</option>
                         </select>
                     </div>
+                    <!--Додав select для країни виробника.-->
                     <div class="form-group">
                         <label for="coutry">
                             Країна виробник
@@ -108,6 +120,7 @@
                             <option value="Lithuania">Литва</option>
                         </select>
                     </div>
+                    <!--Додав select для типу коробки передач.-->
                     <div class="form-group">
                         <label for="gearbox">
                             Тип коробки передач
@@ -120,6 +133,7 @@
                             <option value="Variable">Варіативна (безступінчаста) коробка</option>
                         </select>
                     </div>
+                    <!--Додав вибір палива.-->
                     <div class="form-group"> 
                         <label>
                             Тип палива:
@@ -129,12 +143,14 @@
                         Дизель
                         <input type="radio" name="Type oil" value="diesel" />
                     </div>
+                    <!--Додав вибір коліру.-->
                     <div class="form-group">
                         <label for="colorcar">
                             Колір авто
                         </label>
                         <input id="colorcar" type="color" name="Color car">
                     </div>
+                    <!--Додав вибір ціни авто.-->
                     <div class="form-group">
                         Ціна авто:
                         <label for="price_s">
@@ -146,6 +162,7 @@
                         </label>
                         <input id="price_do" type="number" placeholder="10000$" name="Price do">
                     </div>
+                    <!--Додав вибір року авто.-->
                     <div class="form-group">
                         Рік авто:
                         <label for="year_s">
@@ -157,6 +174,7 @@
                         </label>
                             <input id="year_do" type="number" placeholder="2024" name="Year do" min="1901" max="2024">
                     </div>
+                    <!--Додав список з вибором стану авто.-->
                     <div class="form-group">
                         <label for="stan">
                             Стан авто
@@ -172,6 +190,7 @@
                             </select>
                         </label>
                     </div>
+                    <!--Додав список з вибором комфорту в авто.-->
                     <div class="form-group">
                         <label for="comfort">
                             Комфорт авто
@@ -187,9 +206,11 @@
                             </select>
                         </label>
                     </div>
+                    <!--Додав кнопку.-->
                     <div class="form-group">
                         <button class="btn" type="submit">Пошук</button>
                     </div>
+                    <!--Додав кнопку для скидання даних.-->
                     <div class="form-group">
                         <button class="btn" type="reset">Скинути</button>
                     </div>
@@ -197,6 +218,7 @@
             </form>
         </main>
         <div>
+            <!--Додав невеликий каталог авто.-->
             <h2 class="catalogcar">Каталог</h2>
             <ul class="vitrina">
                 <li class="vitrina__item">
