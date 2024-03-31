@@ -1,0 +1,351 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto/Roboto-BlackItalic.ttf') format('ttf');
+    src: url('/fonts/Roboto/Roboto-Italic.ttf') format('ttf');
+}
+
+/* 1 */
+body {
+    background: #b4b4b4 url("../images/audirs7.jpg") left center/cover no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto', Arial ,sans-serif ;
+    font-weight: 400;
+}
+
+/* 1 */
+header {
+    display: flex;
+}
+
+/* 10 */
+.logo {
+    width: 10%;
+    margin: 2% 0 0 2%;
+}
+
+/* 10 */
+.logo__picture {
+    display: block;
+    background: url('../images/logo-removebg-preview-1.png') center/cover no-repeat;
+    height: 130px;
+}
+
+/* 10 */
+.menu-wrap {
+    font-size: 1.3rem;
+    padding-top: 15px;
+    color: rgb(0, 119, 238);
+}
+
+/* 10 */
+.menu {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 10 */
+.menu__item {
+    height: 35px;
+    padding: 2%;
+    background-color: rgb(0, 119, 238);
+    border: 1px solid rgb(0, 119, 238);
+    border-radius: 6px;
+    text-align: center;
+    margin-left: 8%;
+    margin-top: 5%;
+}
+
+/* 10 */
+.menu__link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* 20 */
+.menu__link:hover {
+    font-weight: 800;
+    color: rgb(252, 252, 252);
+}
+
+/* 10 */
+.wrapper {
+    width: 80%;
+    background-color: #e8f2faf5;
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-left: 191px;
+    margin-bottom: 3%;
+    padding-bottom: 2%;
+}
+
+/* 10 */
+.main {
+    background-color: rgb(0, 119, 238);
+    border-radius: 6px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    color: rgb(255, 255, 255);
+}
+
+/* 10 */
+.main__heading {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1%;
+    margin-bottom: 7px;
+}
+
+/* 100 */
+#categories, #marka, #carBodyType {
+    width: 30%;
+    height: 40px;
+    padding: 0 1.5%;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #0a60c2;
+}
+
+/* 100 */
+#coutry, #gearbox {
+    width: 30%;
+    height: 40px;
+    padding: 0 1.5%;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #0a60c2;
+}
+
+/* 100 */
+#colorcar {
+    width: 20%;
+    padding: 0 1%;
+    border-radius: 5px;
+    border: 1px solid #0a60c2;
+}
+
+/* 100 */
+#title_years_s, #title_years_do, #title_prise_s, #title_prise_do, #titleYears, #titlePrice, #titleYears, #titleColorCar, #titleTypeOil {
+    padding-top: 1%;
+    margin: 0 1%;
+}
+
+/* 100 */
+#typebenzine, #typediesel {
+    width: 5%; 
+    margin-bottom: 2%;
+}
+
+/* 100 */
+#titleColorCar, #titleTypeOil {
+    margin-left: 10%;
+}
+
+/* 100 */
+#titlePrice, #titleYears {
+    margin-left: 4%;
+}
+
+/* 100 */
+#titleYears {
+    margin-right: 2.4%;
+}
+
+/* 100 */
+#price_s, #price_do, #year_s, #year_do {
+    width: 30%;
+    height: 40px;
+    padding: 0 1.5%;
+    border-radius: 5px;
+    border: 1px solid #0a60c2;
+}
+
+/* 100 */
+#titleStan {
+    margin-left: 5%;
+    padding-top: 1%;
+    margin-top: 2%;
+}
+
+/* 100 */
+#stan {
+    width: 40%;
+}
+
+/* 100 */
+#titleComfort {
+    margin-left: 5%;
+    padding-top: 1%;
+}
+
+/* 10 */
+.form-group {
+    display: flex;
+    margin: 1.4% 0;
+}
+
+/* 10 */
+.form-group--checkbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 5%;
+}
+
+/* 10 */
+.btn {
+    font-size: 1.3rem;
+    width: 70%;
+    height: 40px;
+    margin: auto;
+    padding: 0 1.5%;
+    border-radius: 8px;
+    border: 3px solid #113b6b;
+}
+
+/* 10 */
+.catalogcar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* 10 */
+.catalogcar__title {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 3%;
+}
+
+/* 10 */
+.catalogcar__item {
+    background-color: #0a60c2;
+    border: 2px solid #0a60c2;
+    border-radius: 5px;
+    width: 40%;
+    height: 250px;
+    margin-bottom: 2%;;
+}
+
+/* 10 */
+.catalogcar__link {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* 10 */
+.item__title {
+    margin: 2% 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* 10 */
+.item__picture {
+    float: left;
+    width: 50%;
+    margin-left: 2%;
+}
+
+/* 10 */
+.item__info {
+    margin-left: 55%;
+    margin-bottom: 1%;
+}
+
+/* 10 */
+.item__info--mod {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-left: 60%;
+    color: rgb(179, 243, 30);
+}
+
+/* 10 */
+.wrapper-form {
+    height: 500px;
+    width: 23%;
+    background-color: #e8f2faf5;
+    border-radius: 8px;
+    margin-top: 10%;
+    margin-left: 1.2%;
+}
+
+/* 10 */
+.menu-wrapRegistr, .menu-wrapAuthor {
+    width: 100%;
+    font-size: 1.3rem;
+    padding-top: 3%;
+    color: rgb(0, 119, 238);
+    margin-bottom: 10%;
+}
+
+/* 10 */
+.menuRegistr, .menuAuthor {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 10 */
+.menu__itemRegistr, .menu__itemAuthor {
+    width: 35%;
+    padding: 1%;
+    background-color: rgb(0, 119, 238);
+    border: 1px solid rgb(0, 119, 238);
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* 10 */
+.main-form {
+    background-color: rgb(0, 119, 238);
+    border-radius: 6px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+/* 100 */
+#email, #passw, #confpassw, #emailAuthor, #passwAuthor {
+    width: 90%;
+    margin-top: 2%;
+    height: 35px;
+    padding: 1% 1.5%;
+    border-radius: 5px;
+    border: 2px solid #67a8f3;
+}
+
+/* 10 */
+.regestration {
+    margin: 2.2% 0;
+}
+
+/* 10 */
+.form__info {
+    margin-bottom: 2%;
+}
+
+/* 10 */
+.form__infoAuthor {
+    margin: 2% 10%;
+}
+
+/* 10 */
+.form-groupRegistr, .form-groupAuthor {
+    margin-bottom: 5%;
+    margin-left: 8%;
+}
+
+/* 10 */
+.btnRegistr, .btnAuthor {
+    width: 80%;
+    padding: 2.2%;
+    margin-left: 5%;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}

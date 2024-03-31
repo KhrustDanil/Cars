@@ -7,16 +7,18 @@
     <!--Підключив reset.-->
     <link rel="stylesheet" href="../css/reset.css" />
     <!--Підключив style.-->
-    <link rel="stylesheet" href="../css/styleSearce.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
     <!--Додав wrapper.-->
     <div class="wrapper">
         <!--Додав header.-->
         <header>
+            <div class="logo">
+            <a class="logo__picture" href="#"></a>
+            </div>
             <!--Додав блок з посиланнями на інші сторінки.-->
             <div class="menu-wrap">
-                <h2 class="menu-wrap__heading">Посилання на інші сторінки:</h2>
                 <ul class="menu">
                     <li class="menu__item"><a class="menu__link" href="../pages/authorization.html">Авторизація</a></li>
                     <li class="menu__item"><a class="menu__link" href="../index.html">Реєстрація</a></li>
@@ -32,12 +34,10 @@
                 <fieldset class="regestration">
                     <!--Додав select для категорії транспорту.-->
                     <div class="form-group">
-                        <label for="categories">
-                            Категорія транспорту
-                        </label>
                         <select id="categories" name="Category car" >
+                            <option value=" " disabled selected="selected">Категорія транспорту</option>
                             <option value="Any">Будь-який</option>
-                            <option selected="selected" value="Passenger">Легкові</option>
+                            <option value="Passenger">Легкові</option>
                             <option value="Moto">Мото</option>
                             <option value="Trucks">Вантажівки</option>
                             <option value="Trailers">Причепи</option>
@@ -47,37 +47,29 @@
                             <option value="Air transport">Повітряний транспорт</option>
                             <option value="Mobile home">Автобудинок</option>
                         </select>
-                    </div>
-                    <!--Додав select для марки авто.-->
-                    <div class="form-group">
-                        <label for="marka">
-                            Марка
-                        </label>
-                        <select id="marka" name="Car marka" aria-placeholder="Марка" >
-                            <option value="Any">Будь-яка</option>
-                            <option value="BMW">BMW</option>
-                            <option value="Audi">Audi</option>
-                            <option value="Honda">Honda</option>
-                            <option value="Chevrolet">Chevrolet</option>
-                            <option value="Ford">Ford</option>
-                            <option value="Hundai">Hundai</option>
-                            <option value="Lexus">Lexus</option>
-                            <option value="Mazda">Mazda</option>
-                            <option value="Mercedes-Benz">Mercedes-Benz</option>
-                            <option value="Volkswagen">Volkswagen</option>
-                            <option value="Volvo">Volvo</option>
-                            <option value="Skoda">Skoda</option>
-                            <option value="Toyota">Toyota</option>
-                            <option value="Nissan">Nissan</option>
-                            <option value="Renault">Renault</option>
-                        </select>
-                    </div>
+                        <!--Додав select для марки авто.-->
+                            <select id="marka" name="Car marka" aria-placeholder="Марка" >
+                                <option value=" " disabled selected="selected">Марка</option>
+                                <option value="Any">Будь-яка</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Audi">Audi</option>
+                                <option value="Honda">Honda</option>
+                                <option value="Chevrolet">Chevrolet</option>
+                                <option value="Ford">Ford</option>
+                                <option value="Hundai">Hundai</option>
+                                <option value="Lexus">Lexus</option>
+                                <option value="Mazda">Mazda</option>
+                                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                                <option value="Volvo">Volvo</option>
+                                <option value="Skoda">Skoda</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Nissan">Nissan</option>
+                                <option value="Renault">Renault</option>
+                            </select>
                     <!--Додав select для типа кузова.-->
-                    <div class="form-group">
-                        <label for="carBodyType">
-                            Тип кузова
-                        </label>
                         <select id="carBodyType" name="Car body" >
+                            <option value=" " disabled selected="selected">Тип кузова</option>
                             <option value="Any">Будь-який</option>
                             <option value="Sedan">Седан</option>
                             <option value="Universal">Универсал</option>
@@ -96,12 +88,10 @@
                             <option value="Minivan">Минивэн</option>
                         </select>
                     </div>
-                    <!--Додав select для країни виробника.-->
                     <div class="form-group">
-                        <label for="coutry">
-                            Країна виробник
-                        </label>
+                    <!--Додав select для країни виробника.-->
                         <select id="coutry" name="Coutry" >
+                            <option value=" " disabled selected="selected">Країна виробник</option>
                             <option value="Any">Будь-яка</option>
                             <option value="Germeny">Німеччина</option>
                             <option value="Ukraine">Україна</option>
@@ -119,13 +109,9 @@
                             <option value="Canada">Канада</option>
                             <option value="Lithuania">Литва</option>
                         </select>
-                    </div>
                     <!--Додав select для типу коробки передач.-->
-                    <div class="form-group">
-                        <label for="gearbox">
-                            Тип коробки передач
-                        </label>
                         <select id="gearbox" name="Type gearbox" >
+                            <option value=" " disabled selected="selected">Тип коробки передач</option>
                             <option value="Any">Будь-яка</option>
                             <option value="Mechanical">Механічна коробка</option>
                             <option value="Automatic">Автоматична коробка</option>
@@ -135,49 +121,56 @@
                     </div>
                     <!--Додав вибір палива.-->
                     <div class="form-group"> 
-                        <label>
+                        <label id="titleTypeOil">
                             Тип палива:
                         </label>
-                        Бензин
-                        <input type="radio" name="Type oil" value="benzine" />
-                        Дизель
-                        <input type="radio" name="Type oil" value="diesel" />
-                    </div>
+                        <label for="typebenzine">
+                            Бензин
+                        </label>
+                        <input type="radio" id="typebenzine" name="Type oil" value="benzine" />
+                        <label for="typediesel">
+                            Дизель
+                        </label>
+                        <input type="radio" id="typediesel" name="Type oil" value="diesel" />
                     <!--Додав вибір коліру.-->
-                    <div class="form-group">
-                        <label for="colorcar">
+                        <label id="titleColorCar" for="colorcar">
                             Колір авто
                         </label>
                         <input id="colorcar" type="color" name="Color car">
                     </div>
                     <!--Додав вибір ціни авто.-->
                     <div class="form-group">
-                        Ціна авто:
-                        <label for="price_s">
+                        <label id="titlePrice">
+                            Ціна авто:
+                        </label>
+                        <label id="title_prise_s" for="price_s">
                              Від:
                         </label>
                         <input id="price_s" type="number" placeholder="0$" name="Price s">
-                        <label for="price_do">
+                        <label id="title_prise_do" for="price_do">
                             До:
                         </label>
                         <input id="price_do" type="number" placeholder="10000$" name="Price do">
                     </div>
                     <!--Додав вибір року авто.-->
                     <div class="form-group">
-                        Рік авто:
-                        <label for="year_s">
+                        <label id="titleYears">
+                            Рік авто:
+                        </label>
+                        <label id="title_years_s" for="year_s">
                              Від:
                         </label>
                             <input id="year_s" type="number" placeholder="1900" name="Year s" min="1900" max="2023">
-                        <label for="year_do">
+                        <label id="title_years_do" for="year_do">
                             До:
                         </label>
                             <input id="year_do" type="number" placeholder="2024" name="Year do" min="1901" max="2024">
                     </div>
                     <!--Додав список з вибором стану авто.-->
                     <div class="form-group">
-                        <label for="stan">
-                            Стан авто
+                        <label id="titleStan">
+                            Стан авто:
+                        </label>
                             <select id="stan" name="Stan" multiple class="stan">
                                 <option value="Bat">Бита</option>
                                 <option value="credit">У кредиті</option>
@@ -188,23 +181,34 @@
                                 <option value="Professionally renovated">Професійно відремонтована</option>
                                 <option value="Is a service book">Є сервісна книжка</option>
                             </select>
-                        </label>
                     </div>
                     <!--Додав список з вибором комфорту в авто.-->
-                    <div class="form-group">
-                        <label for="comfort">
-                            Комфорт авто
-                            <select id="comfort" name="Comfort" multiple>
-                                <option value="Leather salon">Шкіряний салон</option>
-                                <option value="Hatch">Люк</option>
-                                <option value="Seat ventilation">Вентиляція сидінь</option>
-                                <option value="Power steering">Підсилювач керма</option>
-                                <option value="Heated seats">Підігрів сидінь</option>
-                                <option value="Cruise control">Круїз контроль</option>
-                                <option value="Windshield heating">Обігрів лобового скла</option>
-                                <option value="Heated mirrors">Підігрів дзеркал</option>
-                            </select>
-                        </label>
+                    <div class="form-group--checkbox">
+                        <h3 id="titleComfort">Комфорт:</h3>
+                        <label>
+                            <input type="checkbox" name="comfort" value="Leather salon">
+                            Шкіряний салон
+                          </label>
+                          <label>
+                            <input type="checkbox" name="comfort" value="Hatch">
+                            Люк
+                          </label>
+                          <label>
+                            <input type="checkbox" name="comfort" value="Seat ventilation">
+                            Вентиляція сидінь
+                          </label>
+                          <label>
+                            <input type="checkbox" name="comfort" value="Power steering">
+                            Підсилювач керма
+                          </label>
+                          <label>
+                            <input type="checkbox" name="comfort" value="Heated seats">
+                            Підігрів сидінь
+                          </label>
+                          <label>
+                            <input type="checkbox" name="comfort" value="Cruise control">
+                            Круїз контроль
+                          </label>
                     </div>
                     <!--Додав кнопку.-->
                     <div class="form-group">
@@ -217,35 +221,121 @@
                 </fieldset>
             </form>
         </main>
-        <div>
+        <h2 class="catalogcar__title">Каталог</h2>
+        <div class="catalogcar">
             <!--Додав невеликий каталог авто.-->
-            <h2 class="catalogcar">Каталог</h2>
-            <ul class="vitrina">
-                <li class="vitrina__item">
-                    <img src="../images/reno.jpg" alt="renocar">
-                    <a href="#">Reno kengo 2018</a>
-                <li class="vitrina__item">
-                    <img class="vitrina__picture" src="../images/BMW_f60.png" alt="bmwcar">
-                    <a href="#">BMW F60 2016</a>
-                <li class="vitrina__item">
-                    <img class="vitrina__picture" src="../images/audi_a6.png" alt="audicar">
-                    <a href="#">Audi a6 2015</a>
-                <li class="vitrina__item">
-                    <img class="vitrina__picture" src="../images/santafe.png" alt="santafecar">
-                    <a href="#">Santafe 2020</a>
-                <li class="vitrina__item">
-                    <img class="vitrina__picture" src="../images/passat.png" alt="passatcar">
-                    <a href="#">Passat b7 2019</a>
-                <li class="vitrina__item">
-                    <img class="vitrina__picture" src="../images/tiguan.png" alt="tiguancar">
-                    <a href="#">Tiguan 2021</a>
-                <li class="vitrina__item">
-                    <img class="vitrina__picture" src="../images/civic.png" alt="civiccar">
-                    <a href="#">Civic 2022</a>
-                <li class="vitrina__item">
-                    <img class="vitrina__picture" src="../images/RX.png" alt="LXRxcar">
-                    <a href="#">Lexus Rx 2020</a>
-            </ul>
+            <div class="catalogcar__item">
+                <a class="catalogcar__link" href="#">
+                <h3 class="item__title">Audi a6</h3>
+                <img class="item__picture" src="../images/audi_a6.png" alt="Audia6">
+                <p class="item__info">Країна виробник: Німеччина</p>
+                <p class="item__info">Марка: Audi</p>
+                <p class="item__info">Рік: 2015</p>
+                <p class="item__info">Паливо: Бензин</p>
+                <p class="item__info">Тип кузова: Седен</p>
+                <p class="item__info">Комфорт: Підігрів сидінь, підсилювач керма</p>
+                <p class="item__info">Коробка передач: Автомат</p>
+                <p class="item__info--mod">Ціна: 15000$</p>
+                </a>
+            </div>
+            <div class="catalogcar__item">
+                <a class="catalogcar__link" href="#">
+                <h3 class="item__title">BMW f60</h3>
+                <img class="item__picture" src="../images/BMW_f60.png" alt="BMW_f60">
+                <p class="item__info">Країна виробник: Німеччина</p>
+                <p class="item__info">Марка: BMW</p>
+                <p class="item__info">Рік: 2016</p>
+                <p class="item__info">Паливо: Бензин</p>
+                <p class="item__info">Тип кузова: Седен</p>
+                <p class="item__info">Комфорт: Підігрів сидінь, шкіряні сидіння</p>
+                <p class="item__info">Коробка передач: Автомат</p>
+                <p class="item__info--mod">Ціна: 15500$</p>
+                </a>
+            </div>
+            <div class="catalogcar__item">
+                <a class="catalogcar__link" href="#">
+                <h3 class="item__title">Santafe</h3>
+                <img class="item__picture" src="../images/santafe.png" alt="santafe">
+                <p class="item__info">Країна виробник: Корея</p>
+                <p class="item__info">Марка: Hyundai</p>
+                <p class="item__info">Рік: 2020</p>
+                <p class="item__info">Паливо: Бензин</p>
+                <p class="item__info">Тип кузова: Кроссовер</p>
+                <p class="item__info">Комфорт: Підігрів сидінь, шкіряні сидіння, круїз контроль</p>
+                <p class="item__info">Коробка передач: Автомат</p>
+                <p class="item__info--mod">Ціна: 25000$</p>
+                </a>
+            </div>
+            <div class="catalogcar__item">
+                <a class="catalogcar__link" href="#">
+                <h3 class="item__title">Passat b7</h3>
+                <img class="item__picture" src="../images/passat.png" alt="passat">
+                <p class="item__info">Країна виробник: Німеччина</p>
+                <p class="item__info">Марка: Volkswagen</p>
+                <p class="item__info">Рік: 2019</p>
+                <p class="item__info">Паливо: Дизель</p>
+                <p class="item__info">Тип кузова: Універсал</p>
+                <p class="item__info">Комфорт: Підігрів сидінь, круїз контроль</p>
+                <p class="item__info">Коробка передач: Механіка</p>
+                <p class="item__info--mod">Ціна: 19000$</p>
+                </a>
+            </div>
+            <div class="catalogcar__item">
+                <a class="catalogcar__link" href="#">
+                <h3 class="item__title">Tiguan</h3>
+                <img class="item__picture" src="../images/tiguan.png" alt="tiguan">
+                <p class="item__info">Країна виробник: Німеччина</p>
+                <p class="item__info">Марка: Volkswagen</p>
+                <p class="item__info">Рік: 2021</p>
+                <p class="item__info">Паливо: Бензин</p>
+                <p class="item__info">Тип кузова: Кроссовер</p>
+                <p class="item__info">Комфорт: Підігрів сидінь, круїз контроль, шкіряні сидіння, люк</p>
+                <p class="item__info">Коробка передач: Автомат</p>
+                <p class="item__info--mod">Ціна: 28000$</p>
+                </a>
+            </div>
+            <div class="catalogcar__item">
+                <a class="catalogcar__link" href="#">
+                <h3 class="item__title">Lexus RX</h3>
+                <img class="item__picture" src="../images/RX.png" alt="lexus">
+                <p class="item__info">Країна виробник: Японія</p>
+                <p class="item__info">Марка: Lexus</p>
+                <p class="item__info">Рік: 2020</p>
+                <p class="item__info">Паливо: Бензин</p>
+                <p class="item__info">Тип кузова: Кроссовер</p>
+                <p class="item__info">Комфорт: Підігрів сидінь, круїз контроль, шкіряні сидіння</p>
+                <p class="item__info">Коробка передач: Автомат</p>
+                <p class="item__info--mod">Ціна: 38000$</p>
+                </a>
+            </div>
+            <div class="catalogcar__item">
+                <a class="catalogcar__link" href="#">
+                <h3 class="item__title">Reno kengo</h3>
+                <img class="item__picture" src="../images/reno.jpg" alt="reno">
+                <p class="item__info">Країна виробник: Франція</p>
+                <p class="item__info">Марка: Reno</p>
+                <p class="item__info">Рік: 2018</p>
+                <p class="item__info">Паливо: Дизель</p>
+                <p class="item__info">Тип кузова: Минивэн</p>
+                <p class="item__info">Комфорт: Підігрів сидінь</p>
+                <p class="item__info">Коробка передач: Механіка</p>
+                <p class="item__info--mod">Ціна: 10000$</p>
+                </a>
+            </div>
+            <div class="catalogcar__item">
+                <a class="catalogcar__link" href="#">
+                <h3 class="item__title">Civic</h3>
+                <img class="item__picture" src="../images/civic.png" alt="civic">
+                <p class="item__info">Країна виробник: Франція</p>
+                <p class="item__info">Марка: Honda</p>
+                <p class="item__info">Рік: 2022</p>
+                <p class="item__info">Паливо: Бензин</p>
+                <p class="item__info">Тип кузова: Седан</p>
+                <p class="item__info">Комфорт: Підігрів сидінь, круїз контроль, шкіряні сидіння</p>
+                <p class="item__info">Коробка передач: Автомат</p>
+                <p class="item__info--mod">Ціна: 30000$</p>
+                </a>
+            </div>
         </div>
     </div>
 </body>

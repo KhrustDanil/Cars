@@ -7,52 +7,52 @@
     <!--Підключив reset.-->
     <link rel="stylesheet" href="./css/reset.css" />
     <!--Підключив style.-->
-    <link rel="stylesheet" href="./css/styleRegistr.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
     <!--Додав wrapper.-->
-    <div class="wrapper">
+    <div class="wrapper-form">
         <!--Додав header.-->
         <header>
             <!--Додав блок з посиланнями на інші сторінки.-->
-            <div class="menu-wrap">
-                <h2 class="menu-wrap__heading">Посилання на інші сторінки:</h2>
-                <ul class="menu">
-                    <li class="menu__item"><a class="menu__link" href="./pages/authorization.html">Авторизація</a></li>
-                    <li class="menu__item"><a class="menu__link" href="./pages/search.html">Пошук</a></li>
+            <div class="menu-wrapRegistr">
+                <ul class="menuRegistr">
+                    <li class="menu__itemRegistr"><a class="menu__link" href="./pages/authorization.html">Авторизація</a></li>
+                    <li class="menu__itemRegistr"><a class="menu__link" href="./pages/search.html">Пошук</a></li>
                 </ul>
             </div>
         </header>
         <!--Додав основну частину.-->
-        <main class="main">
+        <main class="main-form">
             <!--Додав основний заголовок.-->
             <h1 class="main__heading">Реєстрація</h1>
             <!--Додав форму для реєстрації.-->
             <form method="POST" action="https://fom.in.ua/echo">
                 <fieldset class="regestration">
-                    <div class="form-group">
-                        <label for="email">
+                    <div class="form-groupRegistr">
+                        <label class="form__info" for="email">
                             Email
                         </label>
+                        <br>
                         <input id="email" type="email" name="emailRegistaction" title="Формат данных не правельный. Только в Chrome" required="required" placeholder="Пошта" />
                     </div>
-                        <div class="form-group"> 
-                        <label for="passw">
+                        <div class="form-groupRegistr"> 
+                        <label class="form__info" for="passw">
                             Password
                         </label>
                         <input id="passw" type="password" name="passwordRegistaction" placeholder="Пароль" />
                         </div>
-                        <div class="form-group"> 
-                            <label for="confpassw">
+                        <div class="form-groupRegistr"> 
+                            <label class="form__info" for="confpassw">
                                 Confirm password
                             </label>
                             <input id="confpassw" type="password" name="confirmPasswordRegistraction" placeholder="Підтвердіть пароль" />
                         </div>
-                        <div class="form-group">
-                            <button class="btn" type="submit">Відправити</button>
+                        <div class="form-groupRegistr">
+                            <input class="btnRegistr" type="submit" value="Відправити">
                         </div>
-                        <div class="form-group">
-                            <button class="btn" type="reset">Скинути</button>
+                        <div class="form-groupRegistr">
+                            <input class="btnRegistr" type="reset" value="Cкинути">
                         </div>
                 </fieldset>
             </form>
